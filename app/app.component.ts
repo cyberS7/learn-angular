@@ -16,12 +16,12 @@ export class AppComponent {
         this.todos = [];
      }
 
-     addTodo(title: string) {
+     onTodoAdded(todo: Todo) {
          //let title: string = input.value;
          //input.value = '';
         
          
-        this.todos.push(new Todo(title));
+        this.todos.push(todo);
          //this.todos.push(title);
      }
 
